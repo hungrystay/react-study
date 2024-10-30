@@ -119,8 +119,268 @@
 //   );
 // }
 
-import AppTSX from "./App.tsx";
-const App = AppTSX;
-export default App;
+// import AppTSX from "./App.tsx";
+// const App = AppTSX;
+// export default App;
+
+// function Profile() {
+//     return (
+//       <img
+//         src="https://i.imgur.com/MK3eW3As.jpg"
+//         alt="Katherine Johnson"
+//       />
+//     );
+//   }
+  
+//   export default function Gallery() {
+//     return (
+//       <section>
+//         <h1>Amazing scientists</h1>
+//         <Profile />
+//         <Profile />
+//         <Profile />
+//       </section>
+//     );
+//   }
+
+// export default function Profile() {
+//     return  ( 
+//         <img 
+//             src="https://i.imgur.com/jA8hHMpm.jpg" 
+//             alt="Katsuko Saruhashi" 
+//             />
+//         );
+//   }
+
+// function Profile() {
+//     return (
+//       <img
+//         src="https://i.imgur.com/QIrZWGIs.jpg"
+//         alt="Alan L. Hart"
+//       />
+//     );
+//   }
+  
+//   export default function Gallery() {
+//     return (
+//       <section>
+//         <h1>Amazing scientists</h1>
+//         <Profile />
+//         <Profile />
+//         <Profile />
+//       </section>
+//     );
+//   }
+
+import React from 'react';
+  
+// import {Gallery} from './Gallery.js';
+
+// export default function App() {
+//   return (
+//     <Gallery />
+//   );
+// }
 
 
+// export default function Bio() {
+//     return (
+//         <>
+//             <div className="intro">
+//             <h1>Welcome to my website!</h1>
+//             </div>
+//             <p className="summary">
+//                 You can find my thoughts here.
+//                 <br/>
+//                 <br/>
+//                 <b>And <i>pictures</i></b> of scientists!
+//             </p>
+//         </>
+
+//     );
+//   }
+
+// export default function TodoList() {
+//     const name = 'Gregorio Y. Zara';
+//     return (
+//       <h1>{name}'s To Do List</h1>
+//     );
+// }
+
+// export default function TodoList() {
+//     return (
+//       <ul style={{
+//         backgroundColor: 'black',
+//         color: 'pink'
+//       }}>
+//         <li>Improve the videophone</li>
+//         <li>Prepare aeronautics lectures</li>
+//         <li>Work on the alcohol-fuelled engine</li>
+//       </ul>
+//     );
+//   }
+
+// const person = {
+//     name: 'Gregorio Y. Zara',
+//     theme: {
+//       backgroundColor: 'black',
+//       color: 'pink'
+//     }
+//   };
+  
+//   export default function TodoList() {
+//     return (
+//       <div style={person.theme}>
+//         <h1>{person}'s Todos</h1>
+//         <img
+//           className="avatar"
+//           src="https://i.imgur.com/7vQD0fPs.jpg"
+//           alt="Gregorio Y. Zara"
+//         />
+//         <ul>
+//           <li>Improve the videophone</li>
+//           <li>Prepare aeronautics lectures</li>
+//           <li>Work on the alcohol-fuelled engine</li>
+//         </ul>
+//       </div>
+//     );
+//   }
+
+
+// const person = {
+//     name: 'Gregorio Y. Zara',
+//     theme: {
+//       backgroundColor: 'black',
+//       color: 'pink'
+//     }
+//   };
+  
+//   export default function TodoList() {
+//     return (
+//       <div style={person.theme}>
+//         <h1>{person.name}'s Todos</h1>
+//         <img
+//           className="avatar"
+//           src="https://i.imgur.com/7vQD0fPs.jpg"
+//           alt="Gregorio Y. Zara"
+//         />
+//         <ul>
+//           <li>Improve the videophone</li>
+//           <li>Prepare aeronautics lectures</li>
+//           <li>Work on the alcohol-fuelled engine</li>
+//         </ul>
+//       </div>
+//     );
+//   }
+
+// const person = {
+//     name: 'Gregorio Y. Zara',
+//     theme: {
+//       backgroundColor: 'black',
+//       color: 'pink'
+//     }
+//   };
+  
+//   export default function TodoList() {
+//     return (
+//       <div style={person.theme}>
+//         <h1>{person.name}'s Todos</h1>
+//         <img
+//           className="avatar"
+//           src="https://i.imgur.com/7vQD0fPs.jpg"
+//           alt="Gregorio Y. Zara"
+//         />
+//         <ul>
+//           <li>Improve the videophone</li>
+//           <li>Prepare aeronautics lectures</li>
+//           <li>Work on the alcohol-fuelled engine</li>
+//         </ul>
+//       </div>
+//     );
+//   }
+
+// const person = {
+//     name: 'Gregorio Y. Zara',
+//     imageId: '7vQD0fP',
+//     imageSize: 's',
+//     theme: {
+//       backgroundColor: 'black',
+//       color: 'pink'
+//     }
+//   };
+  
+//   export default function TodoList() {
+//     return (
+//       <div style={person.theme}>
+//         <h1>{person.name}'s Todos</h1>
+//         <img
+//           className="avatar"
+//           src={baseUrl}{person.imageId}{person.imageSize}".jpg"
+//           alt={person.name}
+//         />
+//         <ul>
+//           <li>Improve the videophone</li>
+//           <li>Prepare aeronautics lectures</li>
+//           <li>Work on the alcohol-fuelled engine</li>
+//         </ul>
+//       </div>
+//     );
+//   }
+
+// const baseUrl = 'https://i.imgur.com/';
+// const person = {
+//   name: 'Gregorio Y. Zara',
+//   imageId: '7vQD0fP',
+//   imageSize: 's',
+//   theme: {
+//     backgroundColor: 'black',
+//     color: 'pink'
+//   }
+// };
+
+// export default function TodoList() {
+//     const srcStr = baseUrl + person.imageId + person.imageSize + ".jpg";
+//   return (
+//     <div style={person.theme}>
+//       <h1>{person.name}'s Todos</h1>
+//       <img
+//         className="avatar"
+//         src={srcStr}
+//         alt={person.name}
+//       />
+//       <ul>
+//         <li>Improve the videophone</li>
+//         <li>Prepare aeronautics lectures</li>
+//         <li>Work on the alcohol-fuelled engine</li>
+//       </ul>
+//     </div>
+//   );
+// }
+
+
+import Avatar from './Avatar.js';
+
+function Card({ children }) {
+  return (
+    <div className="card">
+      {children}
+    </div>
+  );
+}
+
+export default function Profile() {
+  return (
+    <Card>
+      <Avatar
+        size={100}
+        person={{ 
+          name: 'Katsuko Saruhashi',
+          imageId: 'YfeOqp2'
+        }}
+      />
+    </Card>
+  );
+}
+
+  
+  
