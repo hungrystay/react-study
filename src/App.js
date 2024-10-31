@@ -171,8 +171,6 @@
 //       </section>
 //     );
 //   }
-
-import React from 'react';
   
 // import {Gallery} from './Gallery.js';
 
@@ -358,29 +356,655 @@ import React from 'react';
 // }
 
 
-import Avatar from './Avatar.js';
+// import Avatar from './Avatar.js';
 
-function Card({ children }) {
+// function Card({ children }) {
+//   return (
+//     <div className="card">
+//       {children}
+//     </div>
+//   );
+// }
+
+// export default function Profile() {
+//   return (
+//     <Card>
+//       <Avatar
+//         size={100}
+//         person={{ 
+//           name: 'Katsuko Saruhashi',
+//           imageId: 'YfeOqp2'
+//         }}
+//       />
+//     </Card>
+//   );
+// }
+
+// import React from 'react';
+// import { getImageUrl } from './utils.js';
+
+// export default function Gallery() {
+//   return (
+//     <div>
+//       <h1>Notable Scientists</h1>
+//       <section className="profile">
+//         <h2>Maria Skłodowska-Curie</h2>
+//         <img
+//           className="avatar"
+//           src={getImageUrl('szV5sdG')}
+//           alt="Maria Skłodowska-Curie"
+//           width={70}
+//           height={70}
+//         />
+//         <ul>
+//           <li>
+//             <b>Profession: </b> 
+//             physicist and chemist
+//           </li>
+//           <li>
+//             <b>Awards: 4 </b> 
+//             (Nobel Prize in Physics, Nobel Prize in Chemistry, Davy Medal, Matteucci Medal)
+//           </li>
+//           <li>
+//             <b>Discovered: </b>
+//             polonium (chemical element)
+//           </li>
+//         </ul>
+//       </section>
+//       <section className="profile">
+//         <h2>Katsuko Saruhashi</h2>
+//         <img
+//           className="avatar"
+//           src={getImageUrl('YfeOqp2')}
+//           alt="Katsuko Saruhashi"
+//           width={70}
+//           height={70}
+//         />
+//         <ul>
+//           <li>
+//             <b>Profession: </b> 
+//             geochemist
+//           </li>
+//           <li>
+//             <b>Awards: 2 </b> 
+//             (Miyake Prize for geochemistry, Tanaka Prize)
+//           </li>
+//           <li>
+//             <b>Discovered: </b>
+//             a method for measuring carbon dioxide in seawater
+//           </li>
+//         </ul>
+//       </section>
+//     </div>
+//   );
+// }
+
+
+// import Avatar from './Avatar.js';
+
+// function Card({ children }) {
+//   return (
+//     <div className="card">
+//       {children}
+//     </div>
+//   );
+// }
+
+// export default function Profile() {
+//   return (
+//     <Card>
+//       <Avatar
+//         size={100}
+//         person={{ 
+//           name: 'Katsuko Saruhashi',
+//           imageId: 'YfeOqp2'
+//         }}
+//       />
+//     </Card>
+//   );
+// }
+
+// import { getImageUrl } from './utils.js';
+
+// export default function Gallery() {
+//   return (
+//     <div>
+//       <h1>Notable Scientists</h1>
+//       <section className="profile">
+//         <h2>Maria Skłodowska-Curie</h2>
+//         <img
+//           className="avatar"
+//           src={getImageUrl('szV5sdG')}
+//           alt="Maria Skłodowska-Curie"
+//           width={70}
+//           height={70}
+//         />
+//         <ul>
+//           <li>
+//             <b>Profession: </b> 
+//             physicist and chemist
+//           </li>
+//           <li>
+//             <b>Awards: 4 </b> 
+//             (Nobel Prize in Physics, Nobel Prize in Chemistry, Davy Medal, Matteucci Medal)
+//           </li>
+//           <li>
+//             <b>Discovered: </b>
+//             polonium (chemical element)
+//           </li>
+//         </ul>
+//       </section>
+//       <section className="profile">
+//         <h2>Katsuko Saruhashi</h2>
+//         <img
+//           className="avatar"
+//           src={getImageUrl('YfeOqp2')}
+//           alt="Katsuko Saruhashi"
+//           width={70}
+//           height={70}
+//         />
+//         <ul>
+//           <li>
+//             <b>Profession: </b> 
+//             geochemist
+//           </li>
+//           <li>
+//             <b>Awards: 2 </b> 
+//             (Miyake Prize for geochemistry, Tanaka Prize)
+//           </li>
+//           <li>
+//             <b>Discovered: </b>
+//             a method for measuring carbon dioxide in seawater
+//           </li>
+//         </ul>
+//       </section>
+//     </div>
+//   );
+// }
+
+// import { getImageUrl } from './utils.js';
+
+// export default function Gallery() {
+//   return (
+//     <div>
+//       <h1>Notable Scientists</h1>
+      {/* <section className="profile">
+        <h2>Maria Skłodowska-Curie</h2>
+        <img
+          className="avatar"
+          src={getImageUrl('szV5sdG')}
+          alt="Maria Skłodowska-Curie"
+          width={70}
+          height={70}
+        />
+        <ul>
+          <li>
+            <b>Profession: </b> 
+            physicist and chemist
+          </li>
+          <li>
+            <b>Awards: 4 </b> 
+            (Nobel Prize in Physics, Nobel Prize in Chemistry, Davy Medal, Matteucci Medal)
+          </li>
+          <li>
+            <b>Discovered: </b>
+            polonium (chemical element)
+          </li>
+        </ul>
+      </section> */}
+
+        {/* <Profile
+            header = {"Maria Skłodowska-Curie"}
+            url = {"szV5sdG"}
+            name = {"Maria Skłodowska-Curie"}
+            profession = {"physicist and chemist"}
+            awardsNum = {4}
+            award = {"Nobel Prize in Physics, Nobel Prize in Chemistry, Davy Medal, Matteucci Medal"}
+            discovered = {"polonium (chemical element)"}
+        /> */}
+
+        {/* <Profile
+            header = {"Katsuko Saruhashi"}
+            url = {'YfeOqp2'}
+            name = {"Katsuko Saruhashi"}
+            profession = {"geochemist"}
+            awardsNum = {2}
+            award = {"Miyake Prize for geochemistry, Tanaka Prize"}
+            discovered = {"a method for measuring carbon dioxide in seawater)"}
+        /> */}
+
+      {/* <section className="profile">
+        <h2>Katsuko Saruhashi</h2>
+        <img
+          className="avatar"
+          src={getImageUrl('YfeOqp2')}
+          alt="Katsuko Saruhashi"
+          width={70}
+          height={70}
+        />
+        <ul>
+          <li>
+            <b>Profession: </b> 
+            geochemist
+          </li>
+          <li>
+            <b>Awards: 2 </b> 
+            (Miyake Prize for geochemistry, Tanaka Prize)
+          </li>
+          <li>
+            <b>Discovered: </b>
+            a method for measuring carbon dioxide in seawater
+          </li>
+        </ul>
+      </section> */}
+//     </div>
+//   );
+// }
+
+
+// function Profile({header, url, name, profession, awardsNum, award, discovered}) {
+//     return (
+//         <section className="profile">
+//         <h2>{header}</h2>
+//         <img
+//           className="avatar"
+//           src={getImageUrl(url)}
+//           alt={name}
+//           width={70}
+//           height={70}
+//         />
+//         <ul>
+//           <li>
+//             <b>Profession: </b> 
+//             {profession}
+//           </li>
+//           <li>
+//             <b>Awards: {awardsNum} </b> 
+//             {award}
+//           </li>
+//           <li>
+//             <b>Discovered: </b>
+//             {discovered}
+//           </li>
+//         </ul>
+//       </section>
+//     );
+// }
+
+// import { getImageUrl } from './utils.js';
+
+// function Avatar({ person, size }) {
+
+//     let urlSize = 's'
+//     if(size < 90 ) {
+//         urlSize = 's'
+//     } else {
+//         urlSize = 'b'
+//     }
+
+
+//     return (
+//       <img
+//         className="avatar"
+//         src={getImageUrl(person, urlSize)}
+//         alt={person.name}
+//         width={size}
+//         height={size}
+//       />
+//     );
+//   }
+  
+//   export default function Profile() {
+//     return (
+//       <Avatar
+//         size={150}
+//         person={{ 
+//           name: 'Gregorio Y. Zara', 
+//           imageId: '7vQD0fP'
+//         }}
+//       />
+//     );
+//   }
+
+
+// export default function Profile() {
+//     return (
+//       <div>
+//         <div className="card">
+//           <div className="card-content">
+//             <h1>Photo</h1>
+//             <img
+//               className="avatar"
+//               src="https://i.imgur.com/OKS67lhm.jpg"
+//               alt="Aklilu Lemma"
+//               width={70}
+//               height={70}
+//             />
+//           </div>
+//         </div>
+//         <div className="card">
+//           <div className="card-content">
+//             <h1>About</h1>
+//             <p>Aklilu Lemma was a distinguished Ethiopian scientist who discovered a natural treatment to schistosomiasis.</p>
+//           </div>
+//         </div>
+//       </div>
+//     );
+// }
+
+// import React from 'react';
+
+// function Card({ children}) {
+//     return (
+//         <div className="card">
+//             {children}
+//         </div>
+//     );
+// }
+
+// export default function Profile() {
+//     return (
+//       <div>
+//         <Card>
+//             <div className="card-content">
+//                 <h1>Photo</h1>
+//                 <img
+//                 className="avatar"
+//                 src="https://i.imgur.com/OKS67lhm.jpg"
+//                 alt="Aklilu Lemma"
+//                 width={70}
+//                 height={70}
+//                 />
+//             </div>
+//         </Card>
+//         <Card>
+//             <div className="card-content">
+//                 <h1>About</h1>
+//                 <p>Aklilu Lemma was a distinguished Ethiopian scientist who discovered a natural treatment to schistosomiasis.</p>
+//             </div>
+//         </Card>
+//       </div>
+//     );
+// }
+
+// function Item({ name, isPacked }) {
+//     return (
+//       <li className="item">
+//         {/* {isPacked ? (
+//           <del>
+//             {name + ' ✅'}
+//           </del>
+//         ) : (
+//           name
+//         )} */}
+//         {name} {isPacked && '✅'}
+//       </li>
+//     );
+//   }
+  
+//   export default function PackingList() {
+//     return (
+//       <section>
+//         <h1>Sally Ride's Packing List</h1>
+//         <ul>
+//           <Item 
+//             isPacked={true} 
+//             name="Space suit" 
+//           />
+//           <Item 
+//             isPacked={true} 
+//             name="Helmet with a golden leaf" 
+//           />
+//           <Item 
+//             isPacked={false} 
+//             name="Photo of Tam" 
+//           />
+//         </ul>
+//       </section>
+//     );
+//   }
+  
+
+// function Item({ name, isPacked }) {
+//     return (
+//       <li className="item">
+//             {isPacked? name + "✅":name + "❌ "}
+//       </li>
+//     );
+//   }
+  
+//   export default function PackingList() {
+//     return (
+//       <section>
+//         <h1>Sally Ride's Packing List</h1>
+//         <ul>
+//           <Item 
+//             isPacked={true} 
+//             name="Space suit" 
+//           />
+//           <Item 
+//             isPacked={true} 
+//             name="Helmet with a golden leaf" 
+//           />
+//           <Item 
+//             isPacked={false} 
+//             name="Photo of Tam" 
+//           />
+//         </ul>
+//       </section>
+//     );
+//   }
+  
+// function Item({ name, importance }) {
+//     // {importance > 0 ? name + "(Importance:" + importance : name}
+//     return (
+//       <li className="item">
+//             {importance > 0 ? name + "(Importance: " + importance : name}
+//       </li>
+//     );
+//   }
+  
+// export default function PackingList() {
+// return (
+//     <section>
+//     <h1>Sally Ride's Packing List</h1>
+//     <ul>
+//         <Item 
+//         importance={9} 
+//         name="Space suit" 
+//         />
+//         <Item 
+//         importance={0} 
+//         name="Helmet with a golden leaf" 
+//         />
+//         <Item 
+//         importance={6} 
+//         name="Photo of Tam" 
+//         />
+//     </ul>
+//     </section>
+// );
+// }
+
+// function Drink({ name }) {
+//     let itemName = name;
+
+//     let plant = 'leaf';
+//     let content = '15–70 mg/cup';
+//     let age = '4,000+ years';
+//     if(name != 'tea') {
+//         plant = 'bean';
+//         content = '80–185 mg/cup';
+//         age = '1,000+ years';
+//     }
+//     return (
+//       <section>
+//         <h1>{name}</h1>
+//         <dl>
+//           <dt>Part of plant</dt>
+//           <dd>{plant}</dd>
+//           <dt>Caffeine content</dt>
+//           <dd>{content}</dd>
+//           <dt>Age</dt>
+//           <dd>{age}</dd>
+//         </dl>
+//       </section>
+//     );
+//   }
+  
+//   export default function DrinkList() {
+//     return (
+//       <div>
+//         <Drink name="tea" />
+//         <Drink name="coffee" />
+//       </div>
+//     );
+//   }
+  
+// const people = [{
+//     id: 0,
+//     name: 'Creola Katherine Johnson',
+//     profession: 'mathematician',
+//   }, {
+//     id: 1,
+//     name: 'Mario José Molina-Pasquel Henríquez',
+//     profession: 'chemist',
+//   }, {
+//     id: 2,
+//     name: 'Mohammad Abdus Salam',
+//     profession: 'physicist',
+//   }, {
+//     id: 3,
+//     name: 'Percy Lavon Julian',
+//     profession: 'chemist',  
+//   }, {
+//     id: 4,
+//     name: 'Subrahmanyan Chandrasekhar',
+//     profession: 'astrophysicist',
+//   }];
+  
+//   export default function List() {
+//     const listItems = people.map(person =>
+//       <li>{person}</li>
+//     );
+//     return <ul>{listItems}</ul>;
+//   }
+
+// import { people } from './data.js';
+// import { getImageUrl } from './utils.js';
+
+// export default function List() {
+//   const chemists = people.filter(person =>
+//     person.profession === 'chemist'
+//   );
+//   const listItems = chemists.map(person =>
+//     <li>
+//       <img
+//         src={getImageUrl(person)}
+//         alt={person.name}
+//       />
+//       <p>
+//         <b>{person.name}:</b>
+//         {' ' + person.profession + ' '}
+//         known for {person.accomplishment}
+//       </p>
+//     </li>
+//   );
+//   return <ul>{listItems}</ul>;
+// }
+
+// import { people } from './data.js';
+// import { getImageUrl } from './utils.js';
+
+// export default function List() {
+//   const listItems = people.map(person =>
+//     <li key={person.id}>
+//       <img
+//         src={getImageUrl(person)}
+//         alt={person.name}
+//       />
+//       <p>
+//         <b>{person.name}</b>
+//           {' ' + person.profession + ' '}
+//           known for {person.accomplishment}
+//       </p>
+//     </li>
+//   );
+//   return <ul>{listItems}</ul>;
+// }
+
+// import { people } from './data.js';
+// import { getImageUrl } from './utils.js';
+
+// export default function List() {
+
+//   const chemists = people.filter(person =>
+//     person.profession === 'chemist'
+//   );
+
+//   const everyOneElse = people.filter(person =>
+//     person.profession != 'chemist'
+//   );
+
+//   const chemistItems = chemists.map(person =>
+//     <li key={person.id}>
+//       <img
+//         src={getImageUrl(person)}
+//         alt={person.name}
+//       />
+//       <p>
+//         <b>{person.name}:</b>
+//         {' ' + person.profession + ' '}
+//         known for {person.accomplishment}
+//       </p>
+//     </li>
+//   );
+
+//   const everyOneElseItems =  everyOneElse.map(person =>
+//     <li key={person.id}>
+//       <img
+//         src={getImageUrl(person)}
+//         alt={person.name}
+//       />
+//       <p>
+//         <b>{person.name}:</b>
+//         {' ' + person.profession + ' '}
+//         known for {person.accomplishment}
+//       </p>
+//     </li>
+//   );
+
+//   return (
+//     <article>
+//       <h1>Scientists</h1>
+//       <ul>{chemistItems}</ul>
+//       <ul>{everyOneElseItems}</ul>
+//     </article>
+//   );
+// }
+
+import { recipes } from './data.js';
+
+export default function RecipeList() {
+
+  const listItems = recipes.map( recipe => {
+        const ingreItems = recipe.ingredients.map(
+            ingre => <li>{ingre}</li>         
+        );
+        return <div>
+            <h2>
+                {recipe.name}
+            </h2>
+            <ul>
+                {ingreItems}
+            </ul>
+        </div>;
+    }
+  );
+
   return (
-    <div className="card">
-      {children}
+    <div>
+        {listItems}
     </div>
-  );
+  );    
 }
-
-export default function Profile() {
-  return (
-    <Card>
-      <Avatar
-        size={100}
-        person={{ 
-          name: 'Katsuko Saruhashi',
-          imageId: 'YfeOqp2'
-        }}
-      />
-    </Card>
-  );
-}
-
-  
-  
