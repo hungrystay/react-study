@@ -983,28 +983,282 @@
 //   );
 // }
 
+
+// 2.Nested lists in one component
+
+// import { recipes } from './data.js';
+
+// export default function RecipeList() {
+//   const listItems = recipes.map( recipe => {
+//         const ingreItems = recipe.ingredients.map(
+//             ingre => <li>{ingre}</li>         
+//         );
+//         return <div>
+//             <h2>
+//                 {recipe.name}
+//             </h2>
+//             <ul>
+//                 {ingreItems}
+//             </ul>
+//         </div>;
+//     }
+//   );
+
+//   return (
+//     <div>
+//         {listItems}
+//     </div>
+//   );    
+// }
+
+// 3.Extracting a list item component
+
 import { recipes } from './data.js';
 
-export default function RecipeList() {
 
-  const listItems = recipes.map( recipe => {
-        const ingreItems = recipe.ingredients.map(
-            ingre => <li>{ingre}</li>         
-        );
-        return <div>
-            <h2>
-                {recipe.name}
-            </h2>
-            <ul>
-                {ingreItems}
-            </ul>
-        </div>;
-    }
-  );
+// export function Recipe({id, name, ingredients}) {
+//     return <div key={id}>
+//         <h2>{name}</h2>
+//         <ul>
+//             {ingredients.map(ingredient =>
+//               <li key={ingredient}>
+//                 {ingredient}
+//               </li>
+//             )}
+//         </ul>
+//     </div>
+// } 
 
+// export default function RecipeList() {
+//     return (
+//       <div>
+//         <h1>Recipes</h1>
+//         {recipes.map(recipe => 
+        //   <div key={recipe.id}>
+        //     <h2>{recipe.name}</h2>
+  
+        //     <ul>
+        //       {recipe.ingredients.map(ingredient =>
+        //         <li key={ingredient}>
+        //           {ingredient}
+        //         </li>
+        //       )}
+        //     </ul>
+  
+        //   </div>
+//             <Recipe id={recipe.id} name={recipe.name} ingredients={recipe.ingredients}/>
+//         )}
+//       </div>
+//     );
+//   }
+
+// export default function RecipeList() {
+//   return (
+//     <div>
+//       <h1>Recipes</h1>
+//       {recipes.map(recipe =>
+//         <div key={recipe.id}>
+//           <h2>{recipe.name}</h2>
+
+//           <ul>
+//             {recipe.ingredients.map(ingredient =>
+//               <li key={ingredient}>
+//                 {ingredient}
+//               </li>
+//             )}
+//           </ul>
+
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+
+// const poem = {
+//     lines: [
+//       'I write, erase, rewrite',
+//       'Erase again, and then',
+//       'A poppy blooms.'
+//     ]
+//   };
+  
+//   export default function Poem() {
+//     let newLines = []
+
+//     for(let i = 0; i < poem.lines.length; i++) {
+//         newLines.push(poem.lines[i]);
+//         newLines.push('\n');
+//     }
+
+//     newLines = newLines.splice(-1, 1);
+
+//     return (
+//       <article>
+//         {poem.lines.map((line, index) =>
+//             line != '\n' ? 
+//           <p key={index}>
+//             {line}
+//           </p> : <hr />
+//         )}
+//       </article>
+//     );
+//   }
+
+// function Recipe({ drinkers }) {
+//     return (
+//       <ol>    
+//         <li>Boil {drinkers} cups of water.</li>
+//         <li>Add {drinkers} spoons of tea and {0.5 * drinkers} spoons of spice.</li>
+//         <li>Add {0.5 * drinkers} cups of milk to boil and sugar to taste.</li>
+//       </ol>
+//     );
+//   }
+  
+//   export default function App() {
+//     return (
+//       <section>
+//         <h1>Spiced Chai Recipe</h1>
+//         <h2>For two</h2>
+//         <Recipe drinkers={2} />
+//         <h2>For a gathering</h2>
+//         <Recipe drinkers={4} />
+//       </section>
+//     );
+//   }
+  
+
+// let guest = 0;
+
+// function Cup() {
+//   // Bad: changing a preexisting variable!
+//   guest = guest + 1;
+//   return <h2>Tea cup for guest #{guest}</h2>;
+// }
+
+// export default function TeaSet() {
+//   return (
+//     <>
+//       <Cup />
+//       <Cup />
+//       <Cup />
+//     </>
+//   );
+// }
+
+
+// import { useState, useEffect } from 'react';
+// import Clock from './Clock.js';
+
+// function useTime() {
+//   const [time, setTime] = useState(() => new Date());
+//   useEffect(() => {
+//     const id = setInterval(() => {
+//       setTime(new Date());
+//     }, 1000);
+//     return () => clearInterval(id);
+//   }, []);
+//   return time;
+// }
+
+// export default function App() {
+//   const time = useTime();
+//   return (
+//     <Clock time={time} />
+//   );
+// }
+
+// import Profile from './Profile.js';
+
+// export default function App() {
+//   return (
+//     <>
+//       <Profile person={{
+//         imageId: 'lrWQx8l',
+//         name: 'Subrahmanyan Chandrasekhar',
+//       }} />
+//       <Profile person={{
+//         imageId: 'MK3eW3A',
+//         name: 'Creola Katherine Johnson',
+//       }} />
+//     </>
+//   )
+// }
+
+// import { useState, useEffect } from 'react';
+// import StoryTray from './StoryTray.js';
+
+
+// export default function App() {
+//     let initialStories = [
+//         {id: 0, label: "Ankit's Story" },
+//         {id: 1, label: "Taylor's Story" },
+//       ];
+//   let [stories, setStories] = useState([...initialStories])
+//   let time = useTime();
+
+//   // HACK: Prevent the memory from growing forever while you read docs.
+//   // We're breaking our own rules here.
+//   if (stories.length > 100) {
+//     stories.length = 100;
+//   }
+
+//   return (
+//     <div
+//       style={{
+//         width: '100%',
+//         height: '100%',
+//         textAlign: 'center',
+//       }}
+//     >
+//       <h2>It is {time.toLocaleTimeString()} now.</h2>
+//       <StoryTray stories={stories} />
+//     </div>
+//   );
+// }
+
+// function useTime() {
+// //   const [time, setTime] = useState(() => new Date());
+//   let time = new Date();
+//   useEffect(() => {
+//     const id = setInterval(() => {
+//     //   setTime(new Date());
+//       time = new Date();
+//     }, 1000);
+//     return () => clearInterval(id);
+//   }, []);
+//   return time;
+// }
+
+import { sculptureList } from './data.js';
+
+export default function Gallery() {
+  let index = 0;
+
+  function handleClick() {
+    index = index + 1;
+  }
+
+  let sculpture = sculptureList[index];
   return (
-    <div>
-        {listItems}
-    </div>
-  );    
+    <>
+      <button onClick={handleClick}>
+        Next
+      </button>
+      <h2>
+        <i>{sculpture.name} </i> 
+        by {sculpture.artist}
+      </h2>
+      <h3>  
+        ({index + 1} of {sculptureList.length})
+      </h3>
+      <img 
+        src={sculpture.url} 
+        alt={sculpture.alt}
+      />
+      <p>
+        {sculpture.description}
+      </p>
+    </>
+  );
 }
+
